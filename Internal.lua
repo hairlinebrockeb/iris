@@ -1,6 +1,6 @@
 local Repo = 'https://raw.githubusercontent.com/%s/iris/main/%s.lua';
 local function get(b)
-    return loadstring(game:HttpGet(Repo:format('hairlinebrockeb',b)))
+    return loadstring(game:HttpGet(Repo:format('hairlinebrockeb',b)))()
 end;
 local Types = get('Types')
 return function(Iris: Types.Iris): Types.Internal
